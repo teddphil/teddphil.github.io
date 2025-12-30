@@ -1,25 +1,36 @@
 @font-face {
-	font-family: "Lucida Grande 2";
-	src: url(lucidagrande.ttf);
+    font-family: "Lucida Grande 2";
+    src: url(lucidagrande.ttf);
 }
+
 * {
-	font-family: "Lucida Grande 2", Tahoma!important;
-	line-height:130%;
-	letter-spacing:-0.0016in;
+    font-family: "Lucida Grande 2", "Tahoma";
+    line-height: 130%;
+    letter-spacing: -0.03em;
 }
+
+/* Specific fix for your portfolio list */
+.portfolio-stats, 
+.portfolio-stats li, .link {
+    font-family: 'Menlo', 'Monaco', 'Courier New', monospace !important;
+}
+
 p, ul {
-	/* font-size: 96%; */
+    /* font-size: 96%; */
 }
+
 p.attr {
-	font-size: 90%;
-  line-height:90%;
-  margin-bottom: -0.1in;
+    font-size: 90%;
+    line-height: 90%;
+    margin-bottom: -0.1in;
 }
+
 h1 {
-	line-height:130%;
-	letter-spacing:-0.01in;
+    line-height: 130%;
+    letter-spacing: -0.01in;
 }
+
 body {
-	padding-left: 12%;
-	padding-right: 12%;
+    padding-left: 12%;
+    padding-right: 12%;
 }
