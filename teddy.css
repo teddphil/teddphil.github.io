@@ -4,7 +4,7 @@
 }
 
 * {
-    font-family: "Lucida Grande 2", "Tahoma";
+    font-family: -apple-system, "Lucida Grande 2", "Tahoma";
     line-height: 130%;
     letter-spacing: -0.03em;
 }
