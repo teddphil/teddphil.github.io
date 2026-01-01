@@ -10,57 +10,83 @@
 <body>
 <h1>Portfolio</h1>
 
-<h2>Quantitative Pricing & Risk Frameworks</h2>
 
-<h3>Pricing Engine & QIS Framework</h3>
-A high-performance quantitative framework for simulating dynamic QIS (Quantitative Investment Strategy) indices. Implements Monte Carlo methods to price derivatives on strategy indices with a focus on modern C++ memory management and template metaprogramming.
+
+<h3>Fixed Income Stratified Sampling (FISSR)</h3>
+Constructs fixed-income portfolios using stratified sampling to generate buy/sell orders that align a sampled bond portfolio with a target benchmark’s risk profile when full replication isn’t feasible.
 <br>
-<a class="link" href="https://github.com/teddphil/PricingEngine">C++</a>
+<a class="link" href="https://github.com/teddphil/FISSR">C++</a>
 
-<h3>SA-CCR & Counterparty Credit Risk Analytics</h3>
-A cross-language  analytics engine that simulates Monte Carlo exposure profiles for IR, FX, and Equity derivatives. Computes EAD (Exposure at Default) under the Basel III SA-CCR framework.
+<h3>Fixed Income Analytics</h3>
+Analyses fixed income instruments, including interest-rate curve construction, behavioural modelling, and asset-liability management (ALM) risk simulations for banking and balance-sheet analysis.
 <br>
-<a class="link" href="https://github.com/teddphil/SACCR">C++/Python</a>
+<a class="link" href="https://github.com/teddphil/FixedIncome">Python</a>
 
-<h3>FX Black-Scholes Engine</h3>
-A precise implementation of European FX option pricing including domestic/foreign discounting and high-order Greeks. Features a robust Newton-Raphson solver for implied volatility calibration.
+<h3>FX Black-Scholes Pricer</h3>
+Implements the Black-Scholes pricing model for European foreign-exchange options, computing vanilla call/put prices, Greeks, and implied volatility with continuous domestic and foreign discounting.
 <br>
 <a class="link" href="https://github.com/teddphil/FxBlackScholesPricer">C++</a>
 
-<h3>Monte Carlo Option Pricer</h3>
-A modular implementation of path-dependent simulation for European contingencies, focusing on variance reduction techniques and computational efficiency.
+<h3>GARCH Volatility Model</h3>
+Applies a GARCH (Generalised Autoregressive Conditional Heteroskedasticity) model to historical S&P 500 returns for estimating volatility and model parameters.
 <br>
-<a class="link" href="https://github.com/teddphil/OptionPricer">C++</a>
+<a class="link" href="https://github.com/teddphil/GARCH">C++</a>
 
-<h2>Risk Management & Regulatory Modeling</h2>
-
-<h3>Operational Risk Capital Modelling (CCAR)</h3>
-An end-to-end capital planning tool that simulates operational loss events (Cyber, Fraud, Algorithmic Trading) using Loss Distribution Approach (LDA). Aggregates frequency and severity distributions into a regulatory-standard capital plan.
+<h3>Macroeconomic Regime Detection</h3>
+Detects macroeconomic regimes using hidden Markov models to identify shifts in economic states or volatility patterns over time.
 <br>
-<a class="link" href="https://github.com/teddphil/CCAR">C++</a>
-
-<h3>ATM Risk Testing Framework (C++17)</h3>
-An automated validation suite designed for risk model governance. 
-Generates regulatory-grade reporting (JUnit XML/CSV) to ensure model integrity against edge-case market scenarios.
-<br>
-<a class="link" href="https://github.com/teddphil/RiskTesting">C++</a>
-
-<h2>Strategy Research & Data Science</h2>
+<a class="link" href="https://github.com/teddphil/MacroRegimeDetection">Python</a>
 
 <h3>Multi-Class Statistical Learning Pipeline</h3>
-A generalised end-to-end ML pipeline for tabular data. Decouples configuration from core quantitative logic, designed for rapid prototyping of classification tasks in systematic trading and research.
+Analyses high-dimensional, multi-class data using classic machine-learning classifiers with cross-validation and visualizations (e.g., PCA, t-SNE, violin plots) for classification and statistical insight.
 <br>
 <a class="link" href="https://github.com/teddphil/MulticlassClassification">Python</a>
 
-<h3>Strategy Backtest</h3>
-An extensible, event-driven backtesting engine for evaluating rule-based strategies. Focused on clean architecture and separation of concerns between execution logic and historical data ingestion.
+<h3>Monte Carlo Option Pricer</h3>
+A Monte Carlo option pricer focused on pricing European call options using stochastic simulation.
+<br>
+<a class="link" href="https://github.com/teddphil/OptionPricer">C++</a>
+
+<h3>Nasdaq Insight Dashboard</h3>
+A client insights dashboard built with Plotly that visualizes Nasdaq-related data for different clients, served via a simple web application.
+<br>
+<a class="link" href="https://github.com/teddphil/NasdaqDashboard">Python</a>
+
+<h3>Operational Risk Capital Modelling (CCAR)</h3>
+Performs Monte Carlo simulation of operational loss events (e.g., cyber, fraud, trading) with a loss distribution approach to generate aggregated loss distributions in a format similar to the U.S. Federal Reserve’s Comprehensive Capital Analysis and Review (CCAR) capital planning framework.
+<br>
+<a class="link" href="https://github.com/teddphil/CCAR">C++</a>
+
+<h3>Pricing Engine & Quantitative Investment Strategies</h3>
+Simulates dynamic investment strategies and uses Monte Carlo methods to price derivatives written on strategy indices while producing risk sensitivities.
+<br>
+<a class="link" href="https://github.com/teddphil/PricingEngine">C++</a>
+
+<h3>Retrieval-Augmented Generation (RAG) with LLM</h3>
+A Retrieval-Augmented Generation (RAG) workflow using the LangChain framework to combine document retrieval with large language model generation.
+<br>
+<a class="link" href="https://github.com/teddphil/RAG-LLM">Python</a>
+
+<h3>Risk Model Testing Framework</h3>
+Automates testing and validation of quantitative risk models, featuring metrics such as RMSE, bias, hit-rate, and regulatory-style reporting in CSV and JUnit XML formats.
+<br>
+<a class="link" href="https://github.com/teddphil/RiskTesting">C++</a>
+
+<h3>S&P 500 Analysis</h3>
+Performs S&P 500 analysis using moving averages and feature extraction techniques.
+<br>
+<a class="link" href="https://github.com/teddphil/S-P500">Python</a>
+
+<h3>SA-CCR Counterparty Credit Risk Analytics</h3>
+A counterparty credit risk analytics prototype that simulates Monte Carlo exposure profiles for interest rate, FX, and equity derivatives under the Basel III SA-CCR framework.
+<br>
+<a class="link" href="https://github.com/teddphil/SACCR">C++/Python</a>
+
+<h3>Strategy Backtesting Engine</h3>
+Evaluates rule-based trading strategies on historical price data with pluggable strategy interfaces and basic profit and loss tracking.
 <br>
 <a class="link" href="https://github.com/teddphil/StrategyBacktest">Java</a>
 
-<h3>Nasdaq Insight Dashboard</h3>
-A sophisticated data visualisation interface built with Plotly/Dash to extract and present actionable client insights from high-frequency market data.
-<br>
-<a class="link" href="https://github.com/teddphil/NasdaqDashboard">Python</a>
 </body>
 <footer>
 <center>
