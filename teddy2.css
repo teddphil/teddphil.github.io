@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "Lucida Grande 2";
+  src: url(lucidagrande.ttf);
+}
+
+:root {
+  --bg: #f2f0eb;
+  --text: #4a4e4d;
+  --text-light: #7e8281;
+  --accent: #8ba1a4;
+  --border: #d1cdc4;
+  --link-hover: #6a7d80;
+}
+
+/* Base Reset & Layout */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "Lucida Grande 2", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main Content Wrapper */
+#content {
+  flex: 1 0 auto;
+  /* Pushes footer down */
+  max-width: 800px;
+  width: 90%;
+  margin: 4rem auto 2rem auto;
+  line-height: 1.7;
+}
+
+/* Markdown Element Styling */
+#content h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  margin-bottom: 2rem;
+  color: var(--text);
+}
+
+#content h2 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-light);
+  margin-top: 3rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.5rem;
+}
+
+#content a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+#content a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+#content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#content li {
+  margin-bottom: 0.8rem;
+}
+
+/* Professional Footer */
+footer {
+  flex-shrink: 0;
+  padding: 3rem 0;
+  border-top: 1px solid var(--border);
+  background-color: var(--bg);
+}
+
+footer center {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.attr {
+  margin: 0.3rem 0;
+  font-size: 0.85rem;
+  color: var(--text-light);
+  letter-spacing: 0.02em;
+}
+
+footer a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer a:hover {
+  color: var(--accent);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  #content {
+    margin-top: 2rem;
+  }
+
+  #content h1 {
+    font-size: 1.8rem;
+  }
+}
